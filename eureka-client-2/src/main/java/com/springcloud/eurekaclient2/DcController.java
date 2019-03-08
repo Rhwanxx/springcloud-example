@@ -1,4 +1,4 @@
-package com.springcloud.eurekaclient;
+package com.springcloud.eurekaclient2;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -17,8 +17,8 @@ public class DcController {
 
     @GetMapping("dc")
     public String dc(){
-        String services = "Services" + discoveryClient.getServices();
-        System.out.println("这是来自client1的信息："+services);
+        String services = "Services2" + discoveryClient.getServices();
+        System.out.println(services);
         return services;
     }
 }
